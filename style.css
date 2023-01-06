@@ -1,0 +1,412 @@
+:root{
+    --main-color:#bbdbfffd;
+    --blue:#0a0a2b;
+    --bg:#02021f;
+    --border:.1rem solid rgba(7, 6, 54, 0.404);
+}
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+html{
+    /* font-size: 62.5%; */
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+body{
+    background-color: var(--main-color);
+    
+}
+
+/* header style start  */
+
+.header{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid var(--bg);
+    
+}
+.header .logo{
+    /* position: absolute; */
+    left: 0;
+    width: 30%;
+    padding-left: 20px;
+    /* border: 1px solid black; */
+}
+.header .navbar{
+    right: 5px;
+    left: 30px;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+.header .navbar a{
+    margin-right: 30px;
+    margin-left: 30px;
+    font-weight: bold;
+    color:#6262fa;
+}
+.header .navbar a:hover{
+    color: #02021f;
+}
+
+.header .navbar button{
+        /* display: inline-block; */
+        padding:10px;
+        font-size: 15px;
+        color:#fff;
+        background: var(--blue);
+        cursor: pointer;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        /* left: 100px; */
+        margin-left: 150px;
+        margin-bottom: 10px;
+}
+.header .navbar button:hover{
+    background-color: #6262fa;
+    font-weight: bold;
+}
+
+/* header style end  */
+
+/* intro style start  */
+
+.section{
+    margin-top: 20px;
+    display: flex;
+}
+.section .box-1{
+    /* border: 1px solid black; */
+    /* position: relative; */
+    padding: 80px 40px 0 50px;
+    align-content: center;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.section .box-1 h4{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.section .box-1 b{
+    color: #6262fa;
+}
+.section .box-1 p{
+    margin-bottom:20px;
+    text-transform: lowercase;
+}
+.box-1 .btn button{
+    padding:10px 20px 10px 20px;
+    font-size: 15px;
+    color:#fff;
+    background: #6262fa ;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin-right: 50px;
+}
+.box-1 .btn .btn-2{
+    background-color: #fff;
+    color: #6262fa;
+    border: 2px solid rgb(68, 68, 255);
+}
+.box-2{
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    /* border: 1px solid black; */
+    /* position: relative; */
+    height: 600px;
+    transition: 0.5s ease-in-out;
+}
+.box-2 img{
+    height: 600px;
+    padding-left: 50px;
+}
+
+/* intro style end  */
+
+/* sponsors style starts  */
+.sponsors{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+    border-top: 1px solid var(--blue);
+    border-bottom: 1px solid var(--blue);
+    background-color: #aed3fdfd;
+}
+.sponsors img{
+    height: 40px;
+}
+
+/* sonsors style ends  */
+
+/* services style starts  */
+
+.services{
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.services .why{
+    font-weight: lighter;
+    border: 1px solid #7fb7f8fd;
+    padding: 3px 5px;
+    margin-left: 30em;
+    margin-right: 30em;
+    border-radius: 15px;
+    color: #3b3bb1;
+}
+.services h4{
+    font-size: xx-large;
+}
+.services-box{
+    display: flex;
+    justify-content: space-evenly;
+    height: fit-content;
+    width: 100%;
+    padding: 0 10px 0 50px;
+    /* border: 1px solid red; */
+}
+.services-box #p{
+    margin: 15px;
+}
+.services-box .box-2 img{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+
+}
+.services-box .box-1{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-right: 10px;
+    background-color: #b1d5fffd;
+    border-radius: 20px;
+}
+.services-box .box-2{
+    width: 100%;
+    height: 100%;  
+    text-align: center;
+    padding: 10px 20px; 
+    margin: 0 10px; 
+    background-color: #b1d5fffd;
+    border-radius: 20px;
+}
+.services-box .box-3{
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #b1d5fffd;
+    border-radius: 20px;
+}
+
+/* services style ends  */
+
+/* features style starts */
+
+.features{
+    margin-top: 30px;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.features .why{
+    font-weight: lighter;
+    border: 1px solid #7fb7f8fd;
+    padding: 3px 5px;
+    margin-left: 30em;
+    margin-right: 30em;
+    border-radius: 15px;
+    color: #3b3bb1;
+}
+.features h4{
+    font-size: xx-large;
+}
+
+.features-box{
+    margin-top: 20px;
+    display: flex;
+}
+.features-box .box-1{
+    width: 50%;
+    /* border: 1px solid red; */
+    padding: 20px 30px;
+}
+.features-box .box-1 b{
+    font-size: x-large;
+}
+.features-box .box-1 p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.features-box .box-1 img{
+    height: 400px;
+    width: 600px;
+    margin-top: 30px;
+}
+.features-box .box-2{
+    width: 50%;
+    /* border: 1px solid red; */
+    padding: 20px 30px;
+}
+.features-box .box-2 b{
+    font-size:x-large;
+}
+.features-box .box-2 p{
+    font-size: 15px;
+    margin: 15px 0;
+}
+.features-box .box-2 img{
+    height: 400px;
+    width: 600px;
+    margin-top: 30px;
+}
+/* .box-1 button already styled in intro section  */
+
+.box-2 .btn button{
+    padding:10px 20px 10px 20px;
+    font-size: 15px;
+    color:#fff;
+    background: #6262fa ;
+    cursor: pointer;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    margin-right: 50px;
+    
+}
+.box-2 .btn .btn-2{
+    background-color: #fff;
+    color: #6262fa;
+    border: 2px solid rgb(68, 68, 255);
+}
+
+/* features style ends  */
+
+/* download style start  */
+
+.app{
+    display: flex;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+}
+.app .download{
+    /* border: 1px solid red; */
+    width: 50%;
+    height: fit-content;
+    padding: 30px 20px 0 20px;
+}
+.app .download b{
+    font-size:xx-large;
+}
+.app .download p{
+    margin-top: 30px;
+    font-size: smaller;
+}
+.download-box{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.app .download .ios{
+    background-color: #02021f;
+    display: flex;
+    color: #fff;
+    border-radius: 10px;
+    width: 250px;
+    padding: 0 10px 10px 10px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.app .download .android{
+    background-color: #02021f;
+    display: flex;
+    color: #fff;
+    width: 250px;
+    padding: 3px 10px 10px 10px;
+    /* align-items: center; */
+    border-radius: 10px;   
+}
+.app .app-img{
+    width: 50%;
+    height: fit-content;
+}
+.app .app-img img{
+    height: 400px;
+    width: 500px;
+    margin: 0 0 0 50px;
+}
+
+/* download style end  */
+
+/* contacts style starts */
+
+.contacts{
+    display: flex;
+    height: fit-content;
+    background-color: #a8d0fffd ;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+}
+.contacts .contacts-box-1{
+    width: 30%;
+    margin-top: 30px;
+    padding-left: 30px;
+}
+.contacts .contacts-box-2{
+    display: flex;
+    width: 70%;
+    /* border: 1px solid blue; */
+    justify-content: space-evenly;
+    color: #02021f;
+    margin-top: 30px;
+}
+ li{
+    list-style: none;
+    padding: 20px 0 0 0;
+}
+li a{
+    color: #02021f;
+}
+.contacts-box-2 h4{
+    font-size: larger;
+}
+
+/* contact style ends  */
+
+/* footer style starts  */
+
+footer{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    background-color: #02021f;
+    color: #fff;
+    padding-top: 20px;
+    justify-content: center;
+    text-transform: lowercase;
+}
+
+/* footer style ends  */
