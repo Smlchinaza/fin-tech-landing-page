@@ -1,0 +1,105 @@
+// Import variables
+@use "../abstracts/variables" as *;
+
+/* Components */
+// Get Started & Learn More Buttons
+%main-links {
+  display: block;
+  width: fit-content;
+  padding: 15px 33px;
+  @media (max-width: 991px) {
+    padding: 15px 20px;
+  }
+  @media (max-width: 479px) {
+    padding: 15px;
+  }
+  @media (max-width: 375px) {
+    width: 100% !important;
+    text-align: center;
+  }
+  font-weight: 600;
+  border: 2.5px solid $jordy-blue;
+  border-radius: $bdr-radius;
+
+  position: relative;
+  top: 0;
+  left: 0;
+  opacity: 1;
+  transition: top, 0.2s, left 0.2s;
+  @media (min-width: 376px) {
+    &:not(.no-hover):hover {
+      top: -2px;
+      left: 2px;
+    }
+  }
+  &:not(.no-hover):hover {
+    opacity: 0.8;
+  }
+}
+.get-started {
+  @extend %main-links;
+  background-color: $jordy-blue;
+  color: $white !important;
+  font-size: 1.125rem;
+  @media (max-width: 991px) {
+    font-size: 1rem;
+  }
+}
+.learn-more {
+  @extend %main-links;
+  background-color: $white;
+  color: $jordy-blue !important;
+  font-size: 1rem;
+  position: relative;
+  width: 175px;
+  @media (max-width: 991px) {
+    width: 160px;
+  }
+  @media (max-width: 479px) {
+    width: 150px;
+  }
+  img {
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    @media (max-width: 991px) {
+      top: 7px;
+      right: 13px;
+    }
+    @media (max-width: 479px) {
+      top: 6px;
+      right: 6px;
+    }
+    @media (max-width: 375px) {
+      right: 65px;
+    }
+  }
+}
+.links {
+  display: flex;
+  @media (max-width: 375px) {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .get-started {
+    margin-right: 18px;
+    @media (max-width: 991px) {
+      margin-right: 10px;
+    }
+    @media (max-width: 375px) {
+      margin-right: 0px;
+    }
+  }
+}
+
+// Indicators For Services & Features Sections
+.section-indicator {
+  font-size: 1rem;
+  border: 0.2px solid $section-bdr-color;
+  background-color: $indicator-bck;
+  padding: 8px 15px;
+  border-radius: 60px;
+  width: fit-content;
+  margin: 0 auto 20px;
+}

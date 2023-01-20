@@ -1,0 +1,25 @@
+// Import global rules
+@use "./base/global-rules";
+
+// Import container
+@use "./layout/container";
+// Import Header
+@use "./layout/header";
+// Import Landing Section
+@use "./layout/landing";
+// Import Sponsers  Section
+@use "./layout/sponsers-section";
+// Import Services  Section
+@use "./layout/services-section";
+// Import Features  Section
+@use "./layout/features-section";
+// Import App  Section
+@use "./layout/app-section";
+// Import Footer
+@use "./layout/footer";
+
+// Import components
+@use "./layout/components";
+
+// Import typography
+@use "./base/typography";

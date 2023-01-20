@@ -1,0 +1,30 @@
+/* Global Rules */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+%user-select-none {
+  user-select: none;
+}
+img {
+  @extend %user-select-none;
+  max-width: 100%;
+  max-height: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+  z-index: -9999;
+}

@@ -1,0 +1,57 @@
+// Import variables
+@use "../abstracts/variables" as *;
+
+/* Sponsers  Section */
+section.sponsers {
+  & {
+    position: relative;
+    z-index: $section-z-index;
+    background-color: $companies-bck-color;
+    border-top: $section-bdr-width solid;
+    border-bottom: $section-bdr-width solid;
+    border-color: $section-bdr-color;
+  }
+  .container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .grid-system {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    grid-template-areas: "a b c d e f f";
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(3, auto);
+      grid-template-areas: "a b c" "d e f";
+      grid-template-rows: repeat(2, auto);
+    }
+    gap: 16px;
+    align-items: center;
+    .col {
+      height: 55px;
+      @media (max-width: 767px) {
+        height: 45px;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &:nth-of-type(1) {
+        grid-area: a;
+      }
+      &:nth-of-type(2) {
+        grid-area: b;
+      }
+      &:nth-of-type(3) {
+        grid-area: c;
+      }
+      &:nth-of-type(4) {
+        grid-area: d;
+      }
+      &:nth-of-type(5) {
+        grid-area: e;
+      }
+      &:last-of-type {
+        grid-area: f;
+      }
+    }
+  }
+}
