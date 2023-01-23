@@ -1,0 +1,13 @@
+// Import variables
+@use "../abstracts/variables" as *;
+
+/* Container */
+.container {
+  padding: 0 100px;
+  @media (max-width: 1200px) {
+    padding: 0 60px;
+  }
+  @media (max-width: 767px) {
+    padding: 0 30px;
+  }
+}

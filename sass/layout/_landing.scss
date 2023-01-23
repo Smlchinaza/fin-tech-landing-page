@@ -1,0 +1,44 @@
+// Import variables
+@use "../abstracts/variables" as *;
+
+/* Landing Section */
+section.landing {
+  position: relative;
+  z-index: $section-z-index;
+  background-color: $white;
+  .container {
+    & {
+      padding: {
+        top: $vertical-padding;
+        bottom: 10px;
+      }
+      display: flex;
+      @media (max-width: 767px) {
+        flex-direction: column;
+        row-gap: 40px;
+      }
+      @media (max-width: 479px) {
+        padding-top: 30px;
+      }
+    }
+    .text {
+      flex: 1;
+      @media (max-width: 767px) {
+        width: 560px;
+        max-width: 100%;
+      }
+    }
+    .image {
+      flex: 1;
+      img {
+        transform: scale(0.8);
+        opacity: 0;
+        transition: 1s;
+        &.show-landing-img {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

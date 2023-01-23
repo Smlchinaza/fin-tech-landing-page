@@ -1,0 +1,31 @@
+// Import variables
+@use "../abstracts/variables" as *;
+
+/* Services Section */
+section.services {
+  & {
+    position: relative;
+    z-index: $section-z-index;
+    background-color: $white;
+    padding: 80px 0;
+    @media (max-width: 767px) {
+      padding: 40px 0;
+    }
+  }
+  .services-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    column-gap: 40px;
+    .col {
+      padding: 30px;
+      position: relative;
+      transition: 1s;
+      top: 100px;
+      opacity: 0;
+      &.move-to-up {
+        top: 0;
+        opacity: 1;
+      }
+    }
+  }
+}

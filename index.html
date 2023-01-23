@@ -1,205 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Paychum</title>
-</head>
-<body>
-    <script src="script.js"></script>
-    <!-- header section start -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Favicon -->
+    <link rel="icon" href="./images/Favicon.png" type="image/png" />
+
+    <title>PayChum - Managing Your Finances Easily</title>
+  </head>
+  <body>
+    <!-- Header-->
     <header class="header">
-
-        
-
-        <a href="#" class="logo">
-            <img src="logo.png" alt="">
+      <div class="container">
+        <a class="logo" href="#">
+          <img src="./images/header-logo.png" alt="paychum-logo" />
         </a>
-        <div class="container" id="menu-btn" onclick="myFunction(this)">
-                <div class="bar">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div> 
-                </div>
-        <nav class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#menu">Features</a>
-            <a href="#products">FAQs</a>
-            <a href="#review">Help</a>
-            <a href="#contact">Blog</a>
-            <button>Get Started</button>
+        <nav>
+          <div role="button" class="menu-btn">
+            <div>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <ul class="toggle-menu">
+            <li>
+              <a class="active" href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Features</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+            <li>
+              <a href="#">Help</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a class="get-started" href="#">Get Started</a>
+            </li>
+          </ul>
         </nav>
-            </div>
-        
-
+      </div>
     </header>
-
-    <!-- header section end -->
-
-    <!-- intro section start -->
-
-    <section class="section">
-        <div class="box-1">
-        <h4>Managing Your <b>Finances</b> Can Be Made Easier With <b>Pay</b>chum</h4>
-        <p>With PayChum, you can manage your finances in the easiest and most efficient way</p>
-        <div class="btn">
-            <button>Get Started</button>
-            <button class="btn-2">Learn More &#8594</button>
-        </div>
-        </div>
-        <div class="box-2">
-            <img src="pic 1.png" alt="">
-        </div>
+    <!-- Landing Section -->
+    <section class="landing">
+      <div class="container">
+        <article class="text">
+          <h1>
+            Managing Your <span class="marked">Finances</span> Can Be Made
+            Easier With <span class="marked">Pay</span>Chum
+          </h1>
+          <p>
+            With PayChum, you can manage your finances in the easiest and most
+            efficient way.
+          </p>
+          <section class="links">
+            <a href="#" class="get-started">Get Started</a>
+            <a href="#" class="learn-more"
+              ><span>Learn More</span> <img src="./images/arrow.svg" alt=""
+            /></a>
+          </section>
+        </article>
+        <article class="image">
+          <img src="./images/Hero.png" alt="phone" />
+        </article>
+      </div>
     </section>
-
-    <!-- intro section ends -->
-
-    <!-- sponsors section starts  -->
-
-    <div class="sponsors">
-        <img src="airbnb.png" alt="">
-        <img src="uber.png" alt="">
-        <img src="lyft.png" alt="">
-        <img src="verizon.png" alt="">
-        <img src="loom.png" alt="">
-        <img src="reuters.png" alt="">
-    </div>
-
-    <!-- sponsors section end  -->
-
-    <!-- services section starts -->
-
-    <div class="services">
-        <h3 class="why" >Why Choose Us</h3>
-        <h4>services we provide that can help you manage your finances better</h4>
-    </div>
-    <div class="services-box">
-
-        <div class="box-1">
-            <img src="support.svg" alt="">
-            <p id="p"><b>24/7 Support</b></p>
-            <p>We are available 24 hours a day. 7 days a week. we are always ready to respond quickly to any issues that you have. We want to ensure that you experience the best services</p>
+    <!-- Sponsers  Section -->
+    <section class="sponsers">
+      <div class="container grid-system">
+        <section class="col">
+          <img src="./images/airbnb.png" alt="airbnb-logo" />
+        </section>
+        <section class="col">
+          <img src="./images/uber.png" alt="uber-logo" />
+        </section>
+        <section class="col">
+          <img src="./images/Lyft.png" alt="lyft-logo" />
+        </section>
+        <section class="col">
+          <img src="./images/verizon.png" alt="verizon-logo" />
+        </section>
+        <section class="col">
+          <img src="./images/loom.png" alt="loom-logo" />
+        </section>
+        <section class="col">
+          <img src="./images/reuter.png" alt="reuter-logo" />
+        </section>
+      </div>
+    </section>
+    <!-- Services Section -->
+    <section class="services">
+      <div class="container">
+        <div class="section-indicator">
+          <span class="marked">Why Choose Us</span>
         </div>
-        <div class="box-2">
-            <img class="transactions" src="transactions.svg" alt="">
-            <p id="p"><b>Seamless Transactions</b></p>
-            <p>Our application has been designed to be as straightforward and efficient as possible, so that you can complete your transactions in a timely manner. Making transactions has never been easier!</p>
+        <h2>
+          <span class="marked">Services</span> We Provide That Can Help You
+          Manage Your Finances Better
+        </h2>
+        <article class="services-wrapper">
+          <section class="col">
+            <img src="./images/support.svg" alt="" />
+            <h3>24/7 Support</h3>
+            <p>
+              We are available 24 hours a day, 7 days a week. we are always
+              ready to respond quickly to any issues that you have. We want to
+              ensure that you experience the best service.
+            </p>
+          </section>
+          <section class="col">
+            <img src="./images/seemless-transactions.svg" alt="" />
+            <h3>Seamless Transactions</h3>
+            <p>
+              Our application has been designed to be as straightforward and
+              efficient as possible, so that you can complete your transactions
+              in a timely manner. Making transactions has never been easier!
+            </p>
+          </section>
+          <section class="col">
+            <img src="./images/secure.svg" alt="" />
+            <h3>Secure Services</h3>
+            <p>
+              We guarantee the confidentiality of all financial and personal
+              information disclosed to us. Your privacy is important to us, so
+              everything will be kept secure.
+            </p>
+          </section>
+        </article>
+      </div>
+    </section>
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-indicator">
+          <span class="marked">Our Features</span>
         </div>
-        <div class="box-3">
-            <img src="secure.svg" alt="">
-            <p id="p"><b>Secure Services</b></p>
-            <p>We guarantee the confidentiality of all financial and personal information disclosed to us. Your privacy is important to us, so everything will be kept secure.</p>
-        </div>
-
-    </div>
-
-    <!-- services section ends  -->
-
-    <!-- Features section starts  -->
-
-    <div class="features">
-        <h3 class="why" >Why Choose Us</h3>
-        <h4>How we help you to make better financial decisions</h4>
-    </div>
-    <div class="features-box">
-        <div class="box-1">
-            <p><b>Keep track of your spending at a glance</b></p>
-            <p>payChum enables you to track your spending and see where your money goes by easily reviewing transactions regularly.</p>
-            <div class="btn">
-                <button>Get Started</button>
-                <button class="btn-2">Learn More &#8594</button>
-            </div>
-            <img src="chart.png" alt="">
-        </div>
-
-        <div class="box-2">
-            <p><b>Have access to immediate feedback</b></p>
-            <p>Whenever a customer completes and action, we pprovide feedback on the status of that action. We help you understand the status of your finances.</p>
-            <div class="btn">
-                <button>Get Started</button>
-                <button class="btn-2">Learn More &#8594</button>
-            </div>
-            <img src="data.png" alt="">
-        </div>
-    </div>
-
-    <!-- Features section ends  -->
-
-    <!-- download section starts  -->
-
-    <div class="app">
-        <div class="download">
-            <p><b>Download the PayChum mobile app</b></p>
-            <p>The PayChum app is available on iOS and Android. Download it today to start your journey towards financial freedom!</p>
-            <div class="download-box">
-                <div class="ios">
-                    <img src="apple.svg" alt="">
-                    <p>Download on the <strong>App Store</strong> </p>
-                </div>
-                <div class="android">
-                    <img src="android.png" alt="">
-                    <p>Download on the <strong>Google Play</strong> </p>
-                </div>
-        </div>
-        </div>
-        <div class="app-img">
-            <img src="phone-app.png" alt="">
-        </div>
-    </div>
-
-    <!-- download section ends  -->
-
-    <!-- contacts section starts  -->
-
-    <div class="contacts">
-
-        <div class="contacts-box-1">
-            <img class="contact-logo" src="logo.png" alt="">
-            <p>PayChum is a revolutionary financial service provider that enables users to manage their finances in the easiest and most efficient way.</p>
-        </div>
-        <div class="contacts-box-2">
-            <div class="contacts-box-1-1">
-                <h4>About Us</h4>
-                <ul>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Careers</a></li>
-                    <li><a href="#">Blogs</a></li>
-                </ul>
-            </div>
-            <div class="contacts-box-1-2">
-                <h4>Legal</h4>
-                <ul>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms of Agreement</a></li>
-                    <li><a href="#">PayChum Agreement</a></li>
-                </ul>
-            </div>
-            <div class="contacts-box-1-3">
-                <h4>Contact Us</h4>
-                <ul>
-                    <li>+234 7058676851</li>
-                    <li><a href="#">hello@PayChum.com</a></li><br>
-                    <p>8502 Preston Road</p>
-                    <p>Inglewood, Maine 98380</p>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-
-    <!-- contact section ends  -->
-
-    <!-- footer section starts here  -->
-
+        <h2>
+          How <span class="marked">We Help</span> You To Make Better Financial
+          Decisions
+        </h2>
+        <article class="features-wrapper">
+          <section class="col text">
+            <h3>Keep track of your spending at a glance</h3>
+            <p>
+              PayChum enables you to track your spending and see where your
+              money goes by easily reviewing transactions regularly.
+            </p>
+            <section class="links">
+              <a href="#" class="get-started">Get Started</a>
+              <a href="#" class="learn-more"
+                ><span>Learn More</span> <img src="./images/arrow.svg" alt=""
+              /></a>
+            </section>
+          </section>
+          <section class="col image">
+            <img src="./images/CTA-1.png" alt="" />
+          </section>
+          <section class="col image">
+            <img src="./images/CTA-2.png" alt="" />
+          </section>
+          <section class="col text">
+            <h3>Have Access to Immediate feedback</h3>
+            <p>
+              Whenever a customer completes an action, we provide feedback on
+              the status of that action. We help you understand the status of
+              your finances.
+            </p>
+            <section class="links">
+              <a href="#" class="get-started">Get Started</a>
+              <a href="#" class="learn-more"
+                ><span>Learn More</span> <img src="./images/arrow.svg" alt=""
+              /></a>
+            </section>
+          </section>
+        </article>
+      </div>
+    </section>
+    <!-- App Section -->
+    <section class="app">
+      <div class="container">
+        <article class="text">
+          <h2>Download The PayChum Mobile <span class="marked">App</span></h2>
+          <p>
+            The PayChum app is available on iOS and Android. Download it today
+            to start your journey towards financial freedom!
+          </p>
+          <article class="download-links">
+            <a href="#">
+              <img src="./images/apple.svg" alt="apple-logo" />
+              <p>Download on the<br /><span>App Store</span></p>
+            </a>
+            <a href="#">
+              <img src="./images/google-play.png" alt="google play-logo" />
+              <p>Get it On<br /><span>Google Play</span></p>
+            </a>
+          </article>
+        </article>
+        <article class="image">
+          <img src="./images/PAYChum-min.png" alt="" />
+        </article>
+      </div>
+    </section>
+    <!-- Footer -->
     <footer>
-        <p>Redesigned by Chinaza Samuel</p>
+      <div class="container">
+        <section class="col">
+          <img src="./images/footer-logo.png" alt="logo" />
+          <p>
+            PayChum is a revolutionary financial service provider that enables
+            users to manage their finances in the easiest and most efficient
+            way.
+          </p>
+        </section>
+        <section class="col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Blogs</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Agreement</a></li>
+            <li><a href="#">PayChum Agreement</a></li>
+          </ul>
+        </section>
+        <section class="col">
+          <h4>Contact Us</h4>
+          <ul>
+            <li><a href="#">+234 8097257211</a></li>
+            <li><a href="#">Hello@Paychum.com</a></li>
+            <li>
+              <a href="#">8502 Preston Rd.<br />Inglewood, Maine 98380</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <p>Redesigned By Chinaza Samuel</p>
     </footer>
 
-    <!-- footer section ends here  -->
-
-</body>
+    <!-- Scripts -->
+    <script src="./js/script.js"></script>
+  </body>
 </html>
